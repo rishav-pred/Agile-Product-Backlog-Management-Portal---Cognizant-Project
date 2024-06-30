@@ -1,0 +1,25 @@
+<h2> Epic List </h2>
+<table class="table table-striped" style="text-align: center; padding: 8px; border: 2px solid black; border-bottom: 1px solid #ccc;">
+<thead>
+    <tr>
+        <th>Epic_Id</th>
+        <th>project_code</th>
+        <th>sprint_id</th>
+        <th>name</th>
+        <th>created_on</th>
+        <th>completed_on</th>
+        <th>status</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let epic of epics">
+        <td> {{ epic.id }}</td>
+        <td> {{ epic.projectCode }}</td>
+        <td> {{ epic.sprintId }}</td>
+        <td> {{ epic.name }}</td>
+        <td> {{ epic.createdOn }}</td>
+        <td> {{ epic.completedOn }}</td>
+        <td> {{ epic.status }}</td>
+    </tr>
+</tbody>
+</table>

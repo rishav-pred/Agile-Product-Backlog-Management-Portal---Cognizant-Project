@@ -1,0 +1,69 @@
+<!-- {{obj | json}} -->
+<h4 id="desc">Update User-story for an epic</h4>
+<div class="col-md-6 offset-md-3">
+    <form (ngSubmit)="onSubmit()">
+
+        <div class="form-group">
+            <label>Epic Id</label><br>
+            <input type="text" class="form-control" id="epicId"
+                [(ngModel)] = "obj.id" name = "epicId">               
+        </div>
+    
+        <div class="form-group">
+            <label>Acceptance Criteria</label>  <br>
+            <input type="text" class="form-control" id="acceptanceCriteria"
+                [(ngModel)] = "obj.acceptanceCriteria" name = "acceptanceCriteria">
+        </div>
+    
+        <div class="form-group">
+            <label>Assigned to developer ID</label><br>
+            <input type="text" class="form-control" id="assignedToDeveloperId"
+                [(ngModel)] = "obj.assignedToDeveloperId" name = "assignedToDeveloperId">
+        </div>
+    
+        <div class="form-group">
+            <label>Created On</label><br>
+            <input type="text" class="form-control" id="createdOn"
+                [(ngModel)] = "obj.createdOn" name = "createdOn">
+        </div>
+    
+        <div class="form-group">
+            <label>Done On</label><br>
+            <input type="text" class="form-control" id="doneOn"
+                [(ngModel)] = "obj.doneOn" name = "doneOn">
+        </div>
+    
+        <div class="form-group">
+            <label>Priority</label><br>
+            <input type="text" class="form-control" id="priority"
+                [(ngModel)] = "obj.priority" name = "priority">
+        </div>
+    
+        <div class="form-group">
+            <label>Status</label> <br>
+            <input type="text" class="form-control" id="status"
+                [(ngModel)] = "obj.status" name = "status">
+        </div>
+        
+        <div class="form-group">
+            <label>Story Points</label> <br>
+            <input type="text" class="form-control" id="storyPoints"
+                [(ngModel)] = "obj.storyPoints" name = "storyPoints">
+        </div>
+
+        <div class="form-group">
+            <label>Title</label> <br>
+            <input type="text" class="form-control" id="title"
+                [(ngModel)] = "obj.title" name = "title">
+        </div>
+
+        <div class="form-group">
+            <label>User Story Details</label> <br>
+            <input type="text" class="form-control" id="userStoryDetails"
+                [(ngModel)] = "obj.userStoryDetails" name = "userStoryDetails">
+        </div>
+        <br><button class="btn btn-success" type="submit">Submit</button>
+    </form>
+
+</div>
+

@@ -1,0 +1,53 @@
+<h4 id="desc">
+    Add epic details below
+</h4>
+
+<div class="col-md-6 offset-md-3">
+    <form (ngSubmit) = "onSubmit()">
+
+        <div class="form-group">
+            <label>Epic Id</label><br>
+            <input type="text" class="form-control" id="epicId"
+                [(ngModel)] = "epic.id" name = "epicId">               
+        </div>
+    
+        <div class="form-group">
+            <label>Project Code</label>  <br>
+            <input type="text" class="form-control" id="projectCode"
+                [(ngModel)] = "epic.projectCode" name = "projectCode">
+        </div>
+    
+        <div class="form-group">
+            <label>Name</label><br>
+            <input type="text" class="form-control" id="name"
+                [(ngModel)] = "epic.name" name = "name">
+        </div>
+    
+        <div class="form-group">
+            <label>Sprint Id</label><br>
+            <input type="text" class="form-control" id="sprintId"
+                [(ngModel)] = "epic.sprintId" name = "sprintId">
+        </div>
+    
+        <div class="form-group">
+            <label>Created On</label><br>
+            <input type="text" class="form-control" id="createdOn"
+                [(ngModel)] = "epic.createdOn" name = "createdOn">
+        </div>
+    
+        <div class="form-group">
+            <label>Completed On</label><br>
+            <input type="text" class="form-control" id="completedOn"
+                [(ngModel)] = "epic.completedOn" name = "completedOn">
+        </div>
+    
+        <div class="form-group">
+            <label>Status</label> <br>
+            <input type="text" class="form-control" id="status"
+                [(ngModel)] = "epic.status" name = "status">
+        </div>
+    
+        <br><button class="btn btn-success" type="submit">Submit</button>
+    </form>
+
+</div>

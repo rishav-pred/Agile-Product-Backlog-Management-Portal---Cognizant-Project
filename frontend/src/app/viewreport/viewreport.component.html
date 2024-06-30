@@ -1,0 +1,25 @@
+
+<div class="form-group">
+    <label>Enter the Project-Code:</label> <br>
+    <input type="text" class="form-control" id="projectCode"
+        [(ngModel)] = "ID" name = "projectCode"><br>
+</div>
+<button (click)="getReportById(ID)" class="btn btn-primary">Get Report</button>
+  
+<h2 class="desc"> Product Backlog Report </h2>
+<table class="table table-striped" style="text-align: center; padding: 8px; border: 2px solid black; border-bottom: 1px solid #ccc;">
+<thead>
+    <tr>
+        <th>Stage</th>
+        <th>Count</th>
+        
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let item of getObjectKeys(data)">
+        <td> {{ item }}</td>
+        <td>{{ data[item] }}</td>
+        
+    </tr>
+</tbody>
+</table>

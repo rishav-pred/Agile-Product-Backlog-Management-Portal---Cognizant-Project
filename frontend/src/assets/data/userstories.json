@@ -1,0 +1,26 @@
+[
+    {
+        "id": 101,
+        "title": "Scrum",
+        "userStoryDetails": "Done",
+        "acceptanceCriteria": "Validated",
+        "priority": "Top",
+        "createdOn": "2023-01-03",
+        "doneOn": "2023-04-03",
+        "assignedToDeveloperId": "2262958",
+        "storyPoints": "20",
+        "status": "New"
+    },
+    {
+        "id": 102,
+        "title": "Agile",
+        "userStoryDetails": "Completed",
+        "acceptanceCriteria": "Accpeted",
+        "priority": "Coding",
+        "createdOn": "2023-04-02",
+        "doneOn": "2023-05-05",
+        "assignedToDeveloperId": "2262959",
+        "storyPoints": "20",
+        "status": "New"
+    }
+]

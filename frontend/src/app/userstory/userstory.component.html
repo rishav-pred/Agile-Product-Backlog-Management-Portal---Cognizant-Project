@@ -1,0 +1,35 @@
+<h2> User-stories List </h2>
+<table class="table table-striped" style="text-align: center; padding: 8px; border: 2px solid black; border-bottom: 1px solid #ccc;">
+<thead>
+    <tr>
+        <th>Userstory_Id</th>
+        <th>Title</th>
+        <th>User_Story_Details</th>
+        <th>Acceptance_criteria</th>
+        <th>Priority</th>
+        <th>Created_On</th>
+        <th>Done_on</th>
+        <th>Assigned_Developer</th>
+        <th>Story_Points</th>
+        <th>Status</th>
+        <th>Actions</th>
+    </tr>
+</thead>
+<tbody>
+    <tr *ngFor="let userStory of userstories">
+        <td> {{ userStory.id }}</td>
+        <td> {{ userStory.title }}</td>
+        <td> {{ userStory.userStoryDetails }}</td>
+        <td> {{ userStory.acceptanceCriteria }}</td>
+        <td> {{ userStory.priority }}</td>
+        <td> {{ userStory.createdOn }}</td>
+        <td> {{ userStory.doneOn }}</td>
+        <td> {{ userStory.assignedToDeveloperId }}</td>
+        <td> {{ userStory.storyPoints }}</td>
+        <td> {{ userStory.status }}</td>
+        <td>
+            <button (click)="updateUserstory(userStory.id)" class="btn btn-info">Update</button>
+        </td>
+    </tr>
+</tbody>
+</table>
